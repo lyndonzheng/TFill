@@ -1,12 +1,12 @@
 # TFill
 [arXiv](https://arxiv.org/abs/2104.00845) | [Project](https://www.chuanxiaz.com/publication/tfill/)
 
-This repository implements the training, testing and editing tools for "Bridging Global Context Interactions for High-Fidelity Image Completion" by [Chuanxia Zheng](http://www.chuanxiaz.com), [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/), [Jianfei Cai](https://jianfei-cai.github.io/) and [Dinh Phung](https://research.monash.edu/en/persons/dinh-phung). Given one masked image, the proposed **TFill** model is able to generate high-fidelity plausible results on various settings.
+This repository implements the training, testing and editing tools for "Bridging Global Context Interactions for High-Fidelity Image Completion" by [Chuanxia Zheng](http://www.chuanxiaz.com), [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/), [Jianfei Cai](https://jianfei-cai.github.io/) and [Dinh Phung](https://research.monash.edu/en/persons/dinh-phung). Given masked images, the proposed **TFill** model is able to generate high-fidelity plausible results on various settings.
 
 ## Examples
 ![teaser](images/example.png)
 ## Framework
-We propose the two-stages image completion framework, where the upper content inference network (TFill-*Coarse*) generates semantically correct content using a transformer encoder to directly capture the global context information; the lower appearance refinement network (TFill-*refined*) copies global visible and generated features to maksed regions. 
+We propose the two-stages image completion framework, where the upper content inference network (TFill-*Coarse*) generates semantically correct content using a transformer encoder to directly capture the global context information; the lower appearance refinement network (TFill-*refined*) copies global visible and generated features to holes. 
 
 ![teaser](images/framework.png)
 
@@ -18,7 +18,6 @@ We propose the two-stages image completion framework, where the upper content in
 git clone https://github.com/lyndonzheng/TFill
 cd TFill
 ```
-
 ## Requirements
 The original model is trained and evaluated with Pytorch v1.9.1, which cannot be visited in current [PyTorch](https://pytorch.org/get-started/previous-versions/). Therefore, we create a new environment with Pytorch v1.10.0 to test the model, where the performance is the same. 
 
@@ -28,7 +27,6 @@ A suitable [conda](https://conda.io/) environment named `Tfill` can be created a
 conda env create -f environment.yaml
 conda activate TFill
 ```
-
 ## Runing pretrained models
 Download the pre-trained models using the following links ([CelebA-HQ](https://drive.google.com/drive/folders/1ntbVDjJ7-nAt4nLGuu7RNi3QpLfh40gk?usp=sharing), [FFHQ](https://drive.google.com/drive/folders/1xuAsShrw9wI5Be0sQka3vZEsfwnq0pPT?usp=sharing), [ImageNet](https://drive.google.com/drive/folders/1B4RswBUD6_jXAu3MVz3LtuNfoV4wTmGf?usp=sharing), [Plcases2](https://drive.google.com/drive/folders/154ikacQ8A2JLC8iIGda8jiZN-ysL1xh5?usp=sharing)
 ) and put them under```checkpoints/``` directory. It should have the following structure:
@@ -110,7 +108,7 @@ This software is for educational and academic research purpose only. If you wish
 
 ## Citation
 
-The code also use our previous [PIC](https://github.com/lyndonzheng/Pluralistic-Inpainting). If you use this code for your research, please cite our paper.
+The code also uses our previous [PIC](https://github.com/lyndonzheng/Pluralistic-Inpainting). If you use this code for your research, please cite our papers.
 ```
 @misc{zheng2021tfill,
       title={Bridging Global Context Interactions for High-Fidelity Image Completion},
