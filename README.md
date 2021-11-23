@@ -78,6 +78,7 @@ More hyper-parameter can be in ```options/```.
 The coarse results using transformer and restrictive CNN is impressive, which provides plausible results for both **foreground** objects and **background** scene.
 
 ![teaser](images/center_imagenet.jpg)
+![teaser](images/center_places2.jpg)
 
 # GUI
 The GUI operation is similar to our previous GUI in [PIC](https://github.com/lyndonzheng/Pluralistic-Inpainting), where steps are also the same.
@@ -89,7 +90,7 @@ sh ./scripts/ui.sh
 ```
 In ```gui/ui_model.py```, users can modify the ```img_root```(line 30) and the corresponding ```img_files```(line 31) to randomly edit images from the testing dataset.
 
-## Editing Example Results
+## Editing Examples
 
 - **Results (original, output) for face editing**
 
