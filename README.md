@@ -110,13 +110,11 @@ This software is for educational and academic research purpose only. If you wish
 
 The code also uses our previous [PIC](https://github.com/lyndonzheng/Pluralistic-Inpainting). If you use this code for your research, please cite our papers.
 ```
-@misc{zheng2021tfill,
+@inproceedings{zheng2021tfill,
       title={Bridging Global Context Interactions for High-Fidelity Image Completion},
       author={Zheng, Chuanxia and Cham, Tat-Jen and Cai, Jianfei and Phung, Dinh},
-      year={2021},
-      eprint={2104.00845},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+      year={2021}
 }
 
 @inproceedings{zheng2019pluralistic,
