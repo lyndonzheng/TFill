@@ -1,5 +1,5 @@
 # TFill
-[arXiv](https://arxiv.org/abs/2104.00845) | [Project](https://www.chuanxiaz.com/publication/tfill/)
+[arXiv](https://arxiv.org/abs/2104.00845) | [Project](https://chuanxiaz.com/tfill/)
 
 This repository implements the training, testing and editing tools for "Bridging Global Context Interactions for High-Fidelity Image Completion" by [Chuanxia Zheng](http://www.chuanxiaz.com), [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/), [Jianfei Cai](https://jianfei-cai.github.io/) and [Dinh Phung](https://research.monash.edu/en/persons/dinh-phung). Given masked images, the proposed **TFill** model is able to generate high-fidelity plausible results on various settings.
 
