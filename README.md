@@ -1,7 +1,7 @@
 # TFill
-[arXiv](https://arxiv.org/abs/2104.00845) | [Project](https://chuanxiaz.com/tfill/)
+[paper](https://openaccess.thecvf.com/content/CVPR2022/html/Zheng_Bridging_Global_Context_Interactions_for_High-Fidelity_Image_Completion_CVPR_2022_paper.html) | [arXiv](https://arxiv.org/abs/2104.00845) | [Project](https://chuanxiaz.com/tfill/) | [Video](https://www.youtube.com/watch?v=efB1fw0jiLs&feature=youtu.be)
 
-This repository implements the training, testing and editing tools for "Bridging Global Context Interactions for High-Fidelity Image Completion" by [Chuanxia Zheng](http://www.chuanxiaz.com), [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/), [Jianfei Cai](https://jianfei-cai.github.io/) and [Dinh Phung](https://research.monash.edu/en/persons/dinh-phung). Given masked images, the proposed **TFill** model is able to generate high-fidelity plausible results on various settings.
+This repository implements the training, testing and editing tools for "Bridging Global Context Interactions for High-Fidelity Image Completion" by [Chuanxia Zheng](https://www.chuanxiaz.com), [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/), [Jianfei Cai](https://jianfei-cai.github.io/) and [Dinh Phung](https://research.monash.edu/en/persons/dinh-phung). Given masked images, the proposed **TFill** model is able to generate high-fidelity plausible results on various settings.
 
 ## Examples
 ![teaser](images/example.png)
@@ -110,11 +110,13 @@ This software is for educational and academic research purpose only. If you wish
 
 The code also uses our previous [PIC](https://github.com/lyndonzheng/Pluralistic-Inpainting). If you use this code for your research, please cite our papers.
 ```
-@inproceedings{zheng2021tfill,
-      title={Bridging Global Context Interactions for High-Fidelity Image Completion},
-      author={Zheng, Chuanxia and Cham, Tat-Jen and Cai, Jianfei and Phung, Dinh},
-      booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-      year={2021}
+@InProceedings{Zheng_2022_CVPR,
+    author    = {Zheng, Chuanxia and Cham, Tat-Jen and Cai, Jianfei and Phung, Dinh},
+    title     = {Bridging Global Context Interactions for High-Fidelity Image Completion},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2022},
+    pages     = {11512-11522}
 }
 
 @inproceedings{zheng2019pluralistic,
