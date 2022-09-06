@@ -1,14 +1,23 @@
 # TFill
 [paper](https://openaccess.thecvf.com/content/CVPR2022/html/Zheng_Bridging_Global_Context_Interactions_for_High-Fidelity_Image_Completion_CVPR_2022_paper.html) | [arXiv](https://arxiv.org/abs/2104.00845) | [Project](https://chuanxiaz.com/tfill/) | [Video](https://www.youtube.com/watch?v=efB1fw0jiLs&feature=youtu.be)
 
-This repository implements the training, testing and editing tools for "Bridging Global Context Interactions for High-Fidelity Image Completion" by [Chuanxia Zheng](https://www.chuanxiaz.com), [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/), [Jianfei Cai](https://jianfei-cai.github.io/) and [Dinh Phung](https://research.monash.edu/en/persons/dinh-phung). Given masked images, the proposed **TFill** model is able to generate high-fidelity plausible results on various settings.
+This repository implements the training, testing and editing tools for "Bridging Global Context Interactions for High-Fidelity Image Completion (CVPR2022, scores: 1, 1, 2, 2)" by [Chuanxia Zheng](https://www.chuanxiaz.com), [Tat-Jen Cham](https://personal.ntu.edu.sg/astjcham/), [Jianfei Cai](https://jianfei-cai.github.io/) and [Dinh Phung](https://research.monash.edu/en/persons/dinh-phung). Given masked images, the proposed **TFill** model is able to generate high-fidelity plausible results on various settings.
 
 ## Examples
 ![teaser](images/example.png)
+
+## Object Removal
+![teaser](images/tfill_removal.gif)
+
+## Object Repair
+![teaser](images/tfill_repair.gif)
+
 ## Framework
 We propose the two-stages image completion framework, where the upper content inference network (TFill-*Coarse*) generates semantically correct content using a transformer encoder to directly capture the global context information; the lower appearance refinement network (TFill-*refined*) copies global visible and generated features to holes. 
 
 ![teaser](images/framework.png)
+
+
 
 # Getting started
 
