@@ -113,7 +113,7 @@ In ```gui/ui_model.py```, users can modify the ```img_root```(line 30) and the c
 ## License
 This work is licensed under a MIT License.
 
-This software is for educational and academic research purpose only. If you wish to obtain a commercial royalty bearing license to this software, please contact us at chuanxia001@e.ntu.edu.sg.
+This software is for educational and academic research purposes only. If you wish to obtain a commercial royalty bearing license to this software, please contact us at chuanxia001@e.ntu.edu.sg.
 
 ## Citation
 
