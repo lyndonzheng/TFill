@@ -158,7 +158,7 @@ class TC(BaseModel):
             self.optimizerG.zero_grad()
             self.loss_G_GAN += self.GANloss(self.netD(self.img_g), True) * self.opt.lambda_g if self.opt.lambda_g > 0 else 0
             self.loss_G_rec += (self.L1loss(self.img_g * (1 - self.fixed_mask), self.img * (1 - self.fixed_mask)) * 3 +
-                                self.L1loss(self.img_g * self.fixed_mask, self.img_g * self.fixed_mask)) * self.opt.lambda_rec
+                                self.L1loss(self.img_g * self.fixed_mask, self.img * self.fixed_mask)) * self.opt.lambda_rec
             norm_real = self.NormalVGG((self.img + 1) * 0.5)
             norm_fake = self.NormalVGG((self.img_g + 1) * 0.5)
             self.loss_G_lp += (self.LPIPSloss(norm_real, norm_fake).mean()) * self.opt.lambda_lp if self.opt.lambda_lp > 0 else 0
