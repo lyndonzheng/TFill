@@ -37,7 +37,7 @@ conda env create -f environment.yaml
 conda activate TFill
 ```
 ## Runing pretrained models
-Download the pre-trained models using the following links ([CelebA-HQ](https://drive.google.com/drive/folders/1ntbVDjJ7-nAt4nLGuu7RNi3QpLfh40gk?usp=sharing), [FFHQ](https://drive.google.com/drive/folders/1xuAsShrw9wI5Be0sQka3vZEsfwnq0pPT?usp=sharing), [ImageNet](https://drive.google.com/drive/folders/1B4RswBUD6_jXAu3MVz3LtuNfoV4wTmGf?usp=sharing), [Plcases2](https://drive.google.com/drive/folders/154ikacQ8A2JLC8iIGda8jiZN-ysL1xh5?usp=sharing)
+Download the pre-trained models using the following links ([CelebA-HQ](https://drive.google.com/drive/folders/1Qtb9KmW6tdKDbRHTs7bxh7KxOJk04Kcc?usp=sharing), [FFHQ](https://drive.google.com/drive/folders/1QzETuQHR9Nzp1eq5-yD7wwzT9ZYn05-W?usp=sharing), [ImageNet](https://drive.google.com/drive/folders/1R3vQY6PwjunOhyGuhIgOeAfGlzl3d7v0?usp=sharing), [Plcases2](https://drive.google.com/drive/folders/1R7aihruYkcekOXh1XVVIEHw5jvwynrIA?usp=sharing)
 ) and put them under```checkpoints/``` directory. It should have the following structure:
 
 ```
